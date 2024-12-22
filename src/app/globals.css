@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    :root {
+      --background: 220 33% 98%;
+      --foreground: 222 47% 11%;
+      --card: 220 33% 98%;
+      --card-foreground: 222 47% 11%;
+      --popover: 220 33% 98%;
+      --popover-foreground: 222 47% 11%;
+      --primary: 222 47% 11%;
+      --primary-foreground: 220 33% 98%;
+      --secondary: 220 16% 92%;
+      --secondary-foreground: 222 47% 11%;
+      --muted: 220 16% 92%;
+      --muted-foreground: 220 10% 40%;
+      --accent: 220 16% 92%;
+      --accent-foreground: 222 47% 11%;
+      --destructive: 0 84% 60%;
+      --destructive-foreground: 220 33% 98%;
+      --border: 220 16% 90%;
+      --input: 220 16% 90%;
+      --ring: 222 47% 11%;
+      --radius: 0.5rem;
+      --transition-duration: 0.1s; /* Reduced from 0.2s to 0.1s */
+    }
+    .dark {
+      --background: 222 47% 11%;
+      --foreground: 220 33% 98%;
+      --card: 222 47% 11%;
+      --card-foreground: 220 33% 98%;
+      --popover: 222 47% 11%;
+      --popover-foreground: 220 33% 98%;
+      --primary: 220 33% 98%;
+      --primary-foreground: 222 47% 11%;
+      --secondary: 223 47% 20%;
+      --secondary-foreground: 220 33% 98%;
+      --muted: 223 47% 20%;
+      --muted-foreground: 220 10% 70%;
+      --accent: 223 47% 20%;
+      --accent-foreground: 220 33% 98%;
+      --destructive: 0 63% 31%;
+      --destructive-foreground: 220 33% 98%;
+      --border: 223 47% 20%;
+      --input: 223 47% 20%;
+      --ring: 220 33% 98%;
+    }
+  }
+  @layer base {
+    * {
+      @apply border-border;
+      transition: background-color var(--transition-duration) ease-out,
+                  color var(--transition-duration) ease-out,
+                  border-color var(--transition-duration) ease-out;
+    }
+    body {
+      @apply bg-background text-foreground;
+    }
+  }
+  h3 code {
+    @apply !text-lg md:!text-xl;
+  }
+  
+  pre {
+    @apply !px-0 rounded-lg overflow-x-auto py-4
+  }
+   
+  pre [data-line] {
+    @apply px-4
+  }
+
+  code {
+    @apply text-sm md:text-base !leading-loose;
+  }
+  
+  pre > code {
+    counter-reset: line;
+  }
+  
+  code[data-theme*=" "],
+  code[data-theme*=" "] span {
+    color: var(--shiki-light);
+    background-color: var(--shiki-light-bg);
+  }
+   
+  @media (prefers-color-scheme: dark) {
+    code[data-theme*=" "],
+    code[data-theme*=" "] span {
+      color: var(--shiki-dark);
+      background-color: var(--shiki-dark-bg);
+    }
+  }
+  
+  code[data-line-numbers] {
+    counter-reset: line;
+  }
+  
+  code[data-line-numbers] > [data-line]::before {
+    counter-increment: line;
+    content: counter(line);
+    @apply inline-block w-4 mr-4 text-right text-gray-500;
+  }
+ 
+  code {
+    counter-reset: line;
+  }
+ 
+  code > [data-line]::before {
+  counter-increment: line;
+  content: counter(line);
+ 
+  /* Other styling */
+  display: inline-block;
+  width: 1rem;
+  margin-right: 2rem;
+  text-align: right;
+  color: gray;
+}
+ 
+code[data-line-numbers-max-digits="2"] > [data-line]::before {
+  width: 2rem;
+}
+ 
+code[data-line-numbers-max-digits="3"] > [data-line]::before {
+  width: 3rem;
+}
