@@ -29,7 +29,7 @@ export default function Page() {
                   yOffset={8}
                   text={
                     <>
-                      Hi, I&apos;m
+                      Hi, I&apos;m &nbsp;
                       <span className="bg-gradient-to-r from-blue-400 to-green-600 inline-block text-transparent bg-clip-text">
                         {DATA.name.split(" ")[0]}
                       </span>{" "}

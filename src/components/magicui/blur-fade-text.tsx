@@ -3,9 +3,10 @@
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion, Variants } from "framer-motion";
 import { useMemo } from "react";
+import { type ReactNode } from 'react';
 
 interface BlurFadeTextProps {
-  text: string;
+  text: ReactNode;  //
   className?: string;
   variant?: {
     hidden: { y: number };
