@@ -38,6 +38,7 @@ export const BackgroundGradientAnimation = ({
   const [curY, setCurY] = useState(0);
   const [tgX, setTgX] = useState(0);
   const [tgY, setTgY] = useState(0);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     document.body.style.setProperty(
       "--gradient-background-start",
@@ -56,6 +57,7 @@ export const BackgroundGradientAnimation = ({
     document.body.style.setProperty("--size", size);
     document.body.style.setProperty("--blending-value", blendingValue);
   }, []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     function move() {
       if (!interactiveRef.current) {
