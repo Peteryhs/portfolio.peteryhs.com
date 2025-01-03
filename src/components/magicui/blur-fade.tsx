@@ -6,17 +6,15 @@ import { useRef } from "react";
 interface BlurFadeProps {
   children: React.ReactNode;
   className?: string;
-  variant?: {
-    hidden: { y: number };
-    visible: { y: number };
-  };
+  variant?: Variants; // Changed to Variants type
   duration?: number;
   delay?: number;
   yOffset?: number;
   inView?: boolean;
-  inViewMargin?: string;
+  inViewMargin?: string | { top?: number; bottom?: number; left?: number; right?: number }; // Updated type
   blur?: string;
 }
+
 const BlurFade = ({
   children,
   className,
@@ -28,14 +26,27 @@ const BlurFade = ({
   inViewMargin = "-50px",
   blur = "6px",
 }: BlurFadeProps) => {
-  const ref = useRef(null);
-  const inViewResult = useInView(ref, { once: true, margin: inViewMargin });
+  const ref = useRef<HTMLDivElement>(null);
+  
+  // Convert margin to proper format if it's an object
+  const formattedMargin = typeof inViewMargin === 'object' 
+    ? `${inViewMargin.top ?? 0}px ${inViewMargin.right ?? 0}px ${inViewMargin.bottom ?? 0}px ${inViewMargin.left ?? 0}px`
+    : inViewMargin;
+
+  const inViewResult = useInView(ref, { 
+    once: true, 
+    margin: formattedMargin 
+  });
+  
   const isInView = !inView || inViewResult;
+
   const defaultVariants: Variants = {
     hidden: { y: yOffset, opacity: 0, filter: `blur(${blur})` },
     visible: { y: -yOffset, opacity: 1, filter: `blur(0px)` },
   };
+
   const combinedVariants = variant || defaultVariants;
+
   return (
     <AnimatePresence>
       <motion.div
