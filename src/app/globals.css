@@ -63,11 +63,11 @@
   }
   
   pre {
-    @apply !px-0 rounded-lg overflow-x-auto py-4
+    @apply !px-0 rounded-lg overflow-x-auto py-4;
   }
-   
+     
   pre [data-line] {
-    @apply px-4
+    @apply px-4;
   }
 
   code {
