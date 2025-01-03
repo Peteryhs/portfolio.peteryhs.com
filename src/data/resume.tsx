@@ -33,7 +33,7 @@ export const DATA = {
     { href: "/", icon: ArrowUp, label: "Back To Top" },
   ],
   contact: {
-    email: "peters03995@gmail.com",
+    email: "contact.blooming721@passfwd.com",
     tel: "+123456789",
     social: {
       GitHub: {
@@ -58,12 +58,12 @@ export const DATA = {
         navbar: true,
       },
 
-      email: {
+      Email: {
         name: "Send Email",
-        url: "mailto:peters03995@gmail.com",
+        url: "mailto:contact.blooming721@passfwd.com",
         icon: Icons.email,
 
-        navbar: false,
+        navbar: true,
       },
     },
   },

@@ -238,7 +238,7 @@ export default function Page() {
                   </h2>
                   <p className="mx-auto max-w-[800px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                     Want to chat? Just shoot me a dm or email me at the address
-                    peters03995@gmail.com and I&apos;ll respond whenever I can. I
+                    contact.blooming721@passfwd.com and I&apos;ll respond whenever I can. I
                     will ignore all soliciting.
                   </p>
                 </div>
