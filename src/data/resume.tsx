@@ -98,7 +98,7 @@ export const DATA = {
       href: "https://deca.ca",
       badges: [],
       location: "Toronto, ON",
-      title: "Regional Champion, Provincial Competitor",
+      title: "Provincial Champion, ICDC Competitor",
       logoUrl: "/deca.jpg",
       start: "November 2023",
       end: "Present",
