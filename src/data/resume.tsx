@@ -103,7 +103,7 @@ export const DATA = {
       start: "November 2023",
       end: "Present",
       description:
-        "Competed in the DECA Ontario competition in the TTDM and BLTDM categories. Placed 2nd in the regional competition and advanced to the provincial competition.",
+        "Competed in the DECA competition in the TTDM and BLTDM categories. Placed as the regional and provincial champions and advanced to the international (ICDC) competition.",
     },
     {
       company: "IRHS AI Club",
@@ -216,7 +216,7 @@ export const DATA = {
       dates: "October 2024 - November 2024",
       active: true,
       description:
-        "Presented at Horizon Hacks 2024, EcoImpact is a web application that survays the user's behavaiours and determining their carbon footprint and steps to improve it -- using AI and machine learning.",
+        "Presented at Horizon Hacks 2024, EcoImpact is a web application that survays the user's behaviours and determining their carbon footprint and steps to improve it -- using AI and machine learning.",
       technologies: [
         "Html",
         "Css",
