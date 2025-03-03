@@ -58,7 +58,6 @@ Explore the codebase to see how various components and pages are implemented. Th
 
 ## Tech Stack
 
-- **Language:** TypeScript (97.4%), CSS (2.1%)
 - **Framework:** Next.js
 - **UI Components:** 
   - Magic UI for the base template
