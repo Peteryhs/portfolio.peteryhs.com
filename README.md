@@ -1,47 +1,76 @@
-<div align="center">
-<img alt="Portfolio" src="https://github.com/dillionverma/portfolio/assets/16860528/57ffca81-3f0a-4425-b31d-094f61725455" width="90%">
-</div>
+# Peteryhs Portfolio Website
 
-# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdillionverma%2Fportfolio)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Built with TypeScript](https://img.shields.io/badge/TypeScript-100%25-blue.svg)](https://www.typescriptlang.org/)
+[![Built with Next.js](https://img.shields.io/badge/Next.js-13.0+-blueviolet.svg)](https://nextjs.org/)
 
-Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
+Welcome to my portfolio website, a showcase of my projects, skills, and professional experiences. This website is designed with performance, accessibility, and a passion for clean, modern design in mind.
 
-# Features
+## Table of Contents
 
-- Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
-- Includes a blog
-- Responsive for different devices
-- Optimized for Next.js and Vercel
+- [Introduction](#introduction)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Tech Stack](#tech-stack)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
 
-# Getting Started Locally
+## Introduction
 
-1. Clone this repository to your local machine:
+This repository hosts my personal portfolio website. Built primarily with TypeScript and CSS, the site is a modern, responsive, and high-performance platform that reflects my professional journey and technical skill set.
 
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18.17 or later
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository:
    ```bash
-   git clone https://github.com/dillionverma/portfolio
+   git clone https://github.com/Peteryhs/portfolio.peteryhs.com.git
+   cd portfolio.peteryhs.com
    ```
 
-2. Move to the cloned directory
-
+2. Install dependencies:
    ```bash
-   cd portfolio
+   npm install
+   # or
+   yarn install
    ```
 
-3. Install dependencies:
-
+3. Run the development server:
    ```bash
-   pnpm install
+   npm run dev
+   # or
+   yarn dev
    ```
 
-4. Start the local Server:
+Open [http://localhost:3000](http://localhost:3000) in your browser to view your portfolio.
 
-   ```bash
-   pnpm dev
-   ```
+## Usage
 
-5. Open the [Config file](./src/data/resume.tsx) and make changes
+Explore the codebase to see how various components and pages are implemented. This project is modular and easy to extend. Whether you're a fellow developer or just curious about how it's built, feel free to dive in.
 
-# License
+## Tech Stack
 
-Licensed under the [MIT license](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).
+- **Language:** TypeScript (97.4%), CSS (2.1%)
+- **Framework:** Next.js
+- **UI Components:** 
+  - Magic UI for the base template
+  - Aceternity UI for specialized components
+- **Styling:** Custom CSS
+- **Deployment:** Deployed via Vercel
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Special thanks to the developers behind Next.js and TypeScript for creating such robust tools.
+- Thanks to the Magic UI and Aceternity UI teams for their excellent component libraries.
