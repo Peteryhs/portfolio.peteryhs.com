@@ -6,6 +6,12 @@
 
 Welcome to my portfolio website, a showcase of my projects, skills, and professional experiences. This website is designed with performance, accessibility, and a passion for clean, modern design in mind.
 
+
+
+https://github.com/user-attachments/assets/d5ed4ae7-7e78-485a-a110-1f9eb3c3f69a
+
+
+
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -70,6 +76,5 @@ Explore the codebase to see how various components and pages are implemented. Th
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
-
+- Thanks to the **Magic UI** and **Aceternity UI** teams for their excellent component libraries.
 - Special thanks to the developers behind Next.js and TypeScript for creating such robust tools.
-- Thanks to the Magic UI and Aceternity UI teams for their excellent component libraries.
